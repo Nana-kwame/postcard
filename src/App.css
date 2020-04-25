@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+ */
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: "center";
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.App-body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.App-footer--colorRow {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 75px;
+
+  border-radius: 5px;
+  box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+  padding: 0 7.5px;
+}
+
+.App-footer--colorRow__color {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+}
+
+.App-footer--saveBtn {
+  border-radius: 8px;
+  padding: 0 2px;
+  box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+  width: 150px;
+  background-color: #fc9c04;
+  bottom: 5em;
+  /* position: absolute; */
+  cursor: pointer;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin: 5em 0;
+}
+
+.App-footer--saveBtn__text {
+  /* padding: 5px; */
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.App-footer--saveBtn:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
